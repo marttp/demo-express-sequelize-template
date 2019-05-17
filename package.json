@@ -1,0 +1,32 @@
+{
+  "name": "demo-server-express-tree-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "SET NODE_ENV=test&& mocha ./tests || true",
+    "start": "node server.js",
+    "test:dev": "SET NODE_ENV=test&& nodemon server.js --exec \"npm test\"",
+    "watch": " SET NODE_ENV=dev&& nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "expect": "^24.8.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "helmet": "^3.18.0",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.8.6"
+  }
+}
